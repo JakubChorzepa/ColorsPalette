@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>Coloors Copy</title>
+</head>
+<body>
+
+    <!-- App -->
+    <div class="container">
+        <div class="colors-container">
+            <div class="box" lock="unlocked">
+                <div class="box-components">
+                    <div class="lock-button"><ion-icon class='lock' name="lock-open-outline"></ion-icon></div>
+                    <ion-icon class="copy" name="copy-outline"></ion-icon>
+                    <p class="hex-text">#fff</p>
+                </div>
+            </div>
+            <div class="box" lock="unlocked">
+                <div class="box-components">
+                    <div class="lock-button"><ion-icon class='lock' name="lock-open-outline"></ion-icon></div>
+                    <ion-icon class="copy" name="copy-outline"></ion-icon>
+                    <p class="hex-text">#000</p>
+                </div>
+            </div>
+            <div class="box" lock="unlocked">
+                <div class="box-components">
+                    <div class="lock-button"><ion-icon class='lock' name="lock-open-outline"></ion-icon></div>
+                    <ion-icon class="copy" name="copy-outline"></ion-icon>
+                    <p class="hex-text">#fff</p>
+                </div>
+            </div>
+            <div class="box" lock="unlocked">
+                <div class="box-components">
+                    <div class="lock-button"><ion-icon class='lock' name="lock-open-outline"></ion-icon></div>
+                    <ion-icon class="copy" name="copy-outline"></ion-icon>
+                    <p class="hex-text">#000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="menu-box">
+                <ion-icon class="menu-buttons library" name="library-outline"></ion-icon>
+                <p>Library</p>
+            </div>
+            <div class="menu-box">
+                <ion-icon class="menu-buttons generate" name="refresh-outline"></ion-icon>
+                <p>Generate</p>
+            </div>
+            <div class="menu-box">
+                <ion-icon class="menu-buttons save" name="save-outline"></ion-icon>
+                <p>Save</p>
+            </div>
+        </div>
+    </div>
+    <div class="library-parent">
+        <div class="library">
+            <div class="title">Pick your palette</div>
+            <ion-icon class="close-library" name="close-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="save-parent">
+        <div class="save">
+            <div class="title">Enter Palette Name</div>
+            <ion-icon class="close-save" name="close-outline"></ion-icon>
+            <form>
+                <input class="palette-name" type="text" maxlength="12" >
+                <div class="save-palette">Enter</div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./src/js/app.js"></script>
+</body>
+</html>
