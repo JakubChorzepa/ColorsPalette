@@ -4,7 +4,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .container {
@@ -352,7 +352,7 @@ body {
   width: 30%;
   margin-bottom: 20px;
   border: 0;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid #31323340;
   outline: 0;
   font-size: 1.2rem;
   text-align: center;
@@ -385,4 +385,3 @@ body {
 .save-parent .save form .save-palette:hover {
   background-color: #365da0;
 }
-/*# sourceMappingURL=style.css.map */

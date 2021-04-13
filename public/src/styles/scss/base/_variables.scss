@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+// Fonts Variables
+$font-family-ubuntu: 'Ubuntu', sans-serif;
+
+
+// Colors Variables
+$blue: #365da0;
+$blue-darker: #244277;
+
+$gray: #5e849c40;
+$gray-darker: #31323340;
+
+// Functions and mixins
+
+@mixin tablet{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
