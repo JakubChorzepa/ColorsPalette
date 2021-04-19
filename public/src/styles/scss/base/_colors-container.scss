@@ -1,0 +1,44 @@
+.container{
+    transition: opacity 0.3s ease-in-out;
+}
+.colors-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .box{
+        position: relative;
+        flex-basis: 25%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @include tablet{
+            height: 400px;
+        }
+        .box-components{
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .hex-text{
+                margin-bottom: 50px;
+                font-size: 2rem;
+                letter-spacing: 2px;
+                @include tablet{
+                    letter-spacing: 1px;
+                    font-size: 1rem;
+                }
+            }
+            ion-icon{
+                padding: 10px;
+                margin-bottom: 70px;
+                font-size: 1.8rem;
+                opacity: 0.8;
+                cursor: pointer;
+                @include tablet{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

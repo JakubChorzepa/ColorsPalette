@@ -1,15 +1,4 @@
-@import './base/variables';
-@import './base/colors-container';
-@import './base/menu';
-@import './base/library';
-
-
-body{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: $font-family-ubuntu;
-}
+@import './variables';
 
 .save-parent{
     visibility: hidden;
