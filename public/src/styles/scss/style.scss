@@ -2,93 +2,14 @@
 @import './base/colors-container';
 @import './base/menu';
 @import './base/library';
+@import './base/save';
 
 
-body{
+*{
     margin: 0;
-    padding:0;
+    padding: 0;
+}
+body{
     box-sizing: border-box;
     font-family: $font-family-ubuntu;
-}
-
-.save-parent{
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: white;
-    transform: translate(-50%, -50%);
-    width: 45%;
-    height: 200px;
-    border-radius: 30px;
-    box-shadow: 10px 10px 150px 7px $gray;
-    transition: all 0.3s ease-in-out;
-    @include tablet{
-        width: 85%;
-        top: 45%;
-    }
-    .save{
-        .title{
-            margin-top: 15px;
-            display: flex;
-            width: 100%;
-            font-size: 1.7rem;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 50px;
-            @include tablet{
-                font-size: 1.1rem;
-            }
-        }
-        .close-save{
-            position: absolute;
-            font-size: 2.2rem;
-            right: 4%;
-            top: 4%;
-            cursor: pointer;
-            @include tablet{
-                font-size: 2.2rem;
-                right: 4%;
-                top: 6%;
-            }
-        }
-        form{
-            display: flex;
-            align-items: center;
-            width: 100%;
-            justify-content: center;
-            flex-direction: column;
-
-            input{
-                color: rgb(75, 75, 75);
-                height: 20px;
-                width: 30%;
-                margin-bottom: 20px;
-                border: 0;
-                border-bottom: 2px solid $gray-darker;
-                outline: 0;
-                font-size: 1.2rem;
-                text-align: center;
-                @include tablet{
-                    width: 40%;
-                    font-size: 1rem;
-                }
-            }
-            .save-palette{
-                cursor: pointer;
-                display: flex;
-                justify-content: center;
-                font-size: 1rem;
-                color: white;
-                background-color: $blue-darker;
-                border-radius: 20px;
-                padding: 7px 30px;
-                transition: all 0.3s ease;
-                &:hover{
-                    background-color: $blue;
-                }
-            }
-        }
-    }
 }
